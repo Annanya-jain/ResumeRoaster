@@ -8,8 +8,9 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:g
     }]
    }'
 '''
+import os
 import google.generativeai as genai
-genai.configure(api_key='AIzaSyCwwmjyRMMDsGdH7-c47ZpzDiYVcfzeAIM')
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 # Create GenerativeModel instance
 model = genai.GenerativeModel('gemini-1.5-flash')
 
