@@ -1,0 +1,56 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='/index.css')}}"
+    /> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  </head>
+  <body class="body">
+    <div class="app-container">
+      <div class="main-title">Resume Roaster 🔥</div>
+      <h1 class="title">Upload your resume in PDF format only here</h1>
+      <form
+        class="form"
+        method="POST"
+        action="http://127.0.0.1:5000/parsefunc"
+        enctype="multipart/form-data"
+      >
+        <!-- <input class="form-input" type="file" name="file" /> -->
+       <button class="container-btn-file"> 
+          <p>Upload File</p>
+          <input class="file" name="file" type="file" />
+        </button> 
+        <p class="file-name" id="fileName" style="display: none;"></p>
+        <div style="height: 10px"></div>
+
+        <button type="submit" class="container-btn-file-submit">Submit</button>
+        <div class="social-text">
+          Made with ❤️ by
+          <a
+            href="https://www.linkedin.com/in/annanyajain11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            >Annanya</a
+          >
+        </div>
+      </form>
+    </div>
+    <script>
+      const fileInput = document.getElementById('fileInput');
+      const fileName = document.getElementById('fileName');
+
+      fileInput.addEventListener('change', () => {
+        if (fileInput.files.length > 0) {
+          fileName.textContent = `File Selected: ${fileInput.files[0].name}`;
+          fileName.style.display = 'block';
+        } else {
+          fileName.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+.body {
+    background-color: rgb(0, 0, 0);
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 0 auto;
+    padding: 100px 20px;
+    max-width: 600px;
+  }
+  
+  .main-title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    color: rgb(155, 155, 155);
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-size: medium;
+    font-weight: 600;
+  }
+  .roast-text {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: "Fira Code", monospace;
+    font-size: small;
+    font-weight: 100;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .form-input {
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: "Fira Code", monospace;
+    font-size: medium;
+  }
+  
+  /* From Uiverse.io by omar49511 */
+  .container-btn-file {
+    width: 68%;
+    font-family: "Fira Code", monospace;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #6799b6;
+    color: #fff;
+    border-style: none;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 4px 8px 10px -3px rgba(0, 0, 0, 0.356);
+    transition: all 250ms;
+  }
+  .container-btn-file input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .container-btn-file > svg {
+    margin-right: 1em;
+  }
+  .container-btn-file::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border-radius: 0.5em;
+    background-color: #223c4d;
+    z-index: -1;
+    transition: all 350ms;
+  }
+  .container-btn-file:hover::before {
+    width: 100%;
+  }
+  .container-btn-file-submit {
+    width: 68%;
+    font-family: "Fira Code", monospace;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #55724e;
+    color: #fff;
+    border-style: none;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 4px 8px 10px -3px rgba(0, 0, 0, 0.356);
+    transition: all 250ms;
+  }
+  .container-btn-file-submit input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .container-btn-file-submit > svg {
+    margin-right: 1em;
+  }
+  .container-btn-file-submit::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border-radius: 0.5em;
+    background-color: #243329;
+    z-index: -1;
+    transition: all 350ms;
+  }
+  .container-btn-file-submit:hover::before {
+    width: 100%;
+  }
+  .file-name {
+    color: #ffffff;
+    font-family: "Fira Code", monospace;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .social-text {
+    color: rgb(150, 146, 146);
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 20px;
+  }
