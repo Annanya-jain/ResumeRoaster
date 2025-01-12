@@ -1,9 +1,14 @@
-{
+
+  {
     "version": 2,
     "builds": [
-      { "src": "resumeroaster.py", "use": "@vercel/python" }
+      {
+        "src": "app.py",
+        "use": "@vercel/python"
+      }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/resumeroaster.py" }
+      { "src": "/(.*)", "dest": "app.py" }
     ]
   }
+  
