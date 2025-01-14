@@ -27,7 +27,7 @@ import groq
 from groq import Groq
 
 client = Groq(
-    api_key=os.environ.get("GROQ_API_KEY2"),
+    api_key=os.environ.get("GROQ_API_KEY3"),
 )
 def airoast(text):
   try:
